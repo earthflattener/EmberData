@@ -14,3 +14,8 @@ It consists of a directory of 4 files, split with Winzip. The files are
 The first 3 consist of training data sets of varying amounts of spatial data, while the 4th has a set of target variables where a trained model should be applied.
 The data is in GSLIB format
 In the paper, the target variable is PorosityTrueSmooth and the model is trained on all variables except FaciesSmooth and channelonly. 
+
+The code used in the paper is owned by Schlumberger Limitied and, currently, is only available commercially. It is based on an extension of Random Forest suitable for spatial interpolation and stochastic simulation. The idea is to make Random Forest Spatially aware by 'embedding' spatial estimators. In the paper, the embedded estimater is Kriging. 
+
+The theory is described in a bit more detail in 
+Daly. C An Embedded Model Estimator for Non-Stationary Random Functions using Multiple Secondary Variables https://arxiv.org/abs/2011.04116 (to appear in Math Geosci)
